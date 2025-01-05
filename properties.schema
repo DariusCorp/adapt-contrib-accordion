@@ -7,7 +7,7 @@
     "ariaRegion": {
       "type": "string",
       "required": true,
-      "default": "List of expandable sections. Select each button to expand the content.",
+      "default": "Lista secțiunilor extensibile. Selectați fiecare buton pentru a extinde conținutul.",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -24,7 +24,7 @@
     "instruction": {
       "type": "string",
       "required": false,
-      "default": "Select the headings to find out more.",
+      "default": "Selectați titlurile pentru a afla mai multe.",
       "inputType": "Text",
       "validators": [],
       "help": "This is the instruction text",
@@ -34,14 +34,14 @@
       "type": "string",
       "required": false,
       "default": "allItems",
-      "title": "Set completion on:",
+      "title": "Activați finalizarea:",
       "enum": ["inview", "allItems"],
       "inputType": {
         "type": "Select",
         "options": ["inview", "allItems"]
       },
       "validators": [],
-      "help": "Whether completion is based on the learner having viewed all the accordion items - or just having viewed the component"
+      "help": "Dacă finalizarea se bazează pe faptul că cursantul a vizualizat toate elementele acordeonului - sau doar a vizualizat componenta"
     },
     "_items": {
       "type": "array",
@@ -55,43 +55,43 @@
             "type": "string",
             "required": true,
             "inputType": "Text",
-            "title": "Item Title",
+            "title": "Titlul articolului",
             "default": "",
             "validators": ["required"],
-            "help": "This is the item title",
+            "help": "Acesta este titlul articolului",
             "translatable": true
           },
           "body": {
             "type": "string",
             "required": true,
             "inputType": "TextArea",
-            "title": "Item Body",
+            "title": "Conținutul articolului",
             "default": "",
             "validators": ["required"],
-            "help": "This is the item body text that is hidden until the item title is clicked on",
+            "help": "Acesta este textul articolului care este ascuns până când se face clic pe titlul articolului",
             "translatable": true
           },
           "_titleIcon": {
             "type": "string",
             "required": false,
             "default": "",
-            "title": "Title icon",
+            "title": "Titlul pictogramei",
             "inputType": "Text",
             "validators": [],
-            "help": "CSS class name to be applied to the accordion title icon."
+            "help": "Numele clasei CSS care urmează să fie aplicat pictogramei titlului acordeonului."
           },
           "_imageAlignment": {
             "type": "string",
             "required": false,
             "default": "full",
             "inputType": {"type":"Select", "options":["full","left","right"]},
-            "title": "Image alignment",
-            "help": "Defines the alignment of the item image. Full: Image spans the entire width of the container below the text area. Left: Image aligned to the left of the text area. Right: Image aligned to the right of the text area. The default alignment is `full`. For smaller screens the alignment defaults to `full`."
+            "title": "Alinierea imaginii",
+            "help": "Definește alinierea imaginii elementului. Complet: Imaginea se întinde pe întreaga lățime a containerului de sub zona de text. Stânga: Imaginea aliniată la stânga zonei de text. Dreapta: imagine aliniată la dreapta zonei de text. Alinierea implicită este 'full' Pentru ecranele mai mici, alinierea este implicită la 'full'."
           },
           "_graphic": {
             "type": "object",
             "required": false,
-            "title": "Graphic",
+            "title": "Grafic",
             "properties": {
               "alt": {
                 "type": "string",
@@ -99,7 +99,7 @@
                 "default": "",
                 "inputType": "Text",
                 "validators": [],
-                "help": "A description of the image; required when it has meaning that must be conveyed to the learner. For 'decorative' images, leave this blank.",
+                "help": "O descriere a imaginii; necesar atunci când are un sens care trebuie transmis elevului. Pentru imaginile 'decorative', lăsați acest spațiu necompletat",
                 "translatable": true
               },
               "src": {
@@ -108,7 +108,7 @@
                 "default": "",
                 "inputType": "Asset:image",
                 "validators": [],
-                "help": "Optional image which will be rendered with the item body text"
+                "help": "Imagine opțională care va fi redată cu textul corpului elementului"
               },
               "attribution": {
                 "type":"string",
@@ -116,7 +116,7 @@
                 "default": "",
                 "inputType": "Text",
                 "validators": [],
-                "help": "Text to be displayed as an attribution",
+                "help": "Text care trebuie afișat ca atribuire",
                 "translatable": true
               }
             }
@@ -128,7 +128,7 @@
             "title": "Classes",
             "inputType": "Text",
             "validators": [],
-            "help": "Custom classes that are applied to the accordion item. Supported classes 'align-image-left' and 'align-image-right' are available to align item image to the left or right in desktop view. On smaller screens the item image defaults underneath the item body text. Additional classes can be used but they must be predefined in one of the Less files. Separate multiple classes with a space."
+            "help": "Clase particularizate care sunt aplicate elementului acordeon. Clasele acceptate 'align-image-left' și 'align-image-right' sunt disponibile pentru a alinia imaginea elementului la stânga sau la dreapta în vizualizarea desktop. Pe ecranele mai mici, imaginea articolului este implicită sub textul corpului elementului. Pot fi utilizate clase suplimentare, dar acestea trebuie să fie predefinite într-unul dintre fișierele Less. Separați mai multe clase cu un spațiu."
           }
         }
       }
@@ -137,28 +137,28 @@
       "type": "boolean",
       "required": false,
       "default": true,
-      "title": "Items should auto-collapse",
+      "title": "Restrângerea automată a elementelor",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "If disabled, upon expansion of an accordion item, any previously expanded items will not be collapsed"
+      "help": "Dacă este dezactivat, la extinderea unui articol acordeon, orice element extins anterior nu va fi restrâns"
     },
     "_shouldExpandFirstItem": {
       "type": "boolean",
       "required": false,
       "default": false,
-      "title": "First item should be expanded",
+      "title": "Primul element ar trebui extins",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "If enabled, the first item will be expanded by default"
+      "help": "Dacă este activat, primul element va fi extins în mod implicit"
     },
     "_isCenterAligned": {
       "type": "boolean",
       "required": false,
       "default": false,
-      "title": "Enable item button vertical layout",
+      "title": "Activați aspectul vertical al butonului elementului",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "If enabled, the layout of the item button child elements will be stacked on top of one another centrally."
+      "help": "Dacă este activat, aspectul elementelor secundare ale butonului de element va fi stivuit unul peste celălalt central."
     }
   }
 }

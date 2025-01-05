@@ -6,9 +6,9 @@
         "_classes": "",
         "_layout": "full",
         "title": "Accordion",
-        "displayTitle": "Accordion Title",
-        "body": "This is optional body text.",
-        "instruction": "Select the headings to find out more.",
+        "displayTitle": "Titlul acordeonului",
+        "body": "Acesta este un text opțional.",
+        "instruction": "Selectați titlurile pentru a afla mai multe.",
         "_shouldCollapseItems": true,
         "_shouldExpandFirstItem": false,
         "_comment": "setCompletionOn = inview | allItems",
@@ -16,8 +16,8 @@
         "_isCenterAligned": false,
         "_items": [
             {
-              "title": "Heading 1",
-              "body": "This is display text 1 with a full width image.",
+              "title": "Rubrica 1",
+              "body": "Acesta este textul de afișare 1 cu o imagine cu lățime completă.",
               "_titleIcon": "",
               "_imageAlignment": "full",
               "_graphic": {
@@ -28,8 +28,8 @@
               "_classes": ""
             },
             {
-              "title": "Heading 2",
-              "body": "This is display text 2 with a single width left aligned image.",
+              "title": "Rubrica 2",
+              "body": "Acesta este textul de afișare 2 cu o imagine aliniată la stânga.",
               "_titleIcon": "",
               "_imageAlignment": "left",
               "_graphic": {
@@ -40,8 +40,8 @@
               "_classes": ""
             },
             {
-              "title": "Heading 3",
-              "body": "This is display text 3 with a single width right aligned image.",
+              "title": "Rubrica 3",
+              "body": "Acesta este textul de afișare 3 cu o singură imagine aliniată la dreapta.",
               "_titleIcon": "",
               "_imageAlignment": "right",
               "_graphic": {
@@ -52,8 +52,8 @@
               "_classes": ""
             },
             {
-              "title": "Heading 4",
-              "body": "This is display text 4 with no image.",
+              "title": "Rubrica 4",
+              "body": "Acesta este textul de afișare 4 fără imagine.",
               "_titleIcon": "",
               "_imageAlignment": "",
               "_graphic": {

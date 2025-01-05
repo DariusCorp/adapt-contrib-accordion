@@ -6,8 +6,8 @@
   "bugs": "https://github.com/adaptlearning/adapt-contrib-accordion/issues",
   "component": "accordion",
   "targetAttribute": "_accordion",
-  "displayName": "Accordion",
-  "description": "An accordion component that displays clickable titles, which reveal display text",
+  "displayName": "Acordeon",
+  "description": "O componentă acordeon care afișează titluri pe care se poate face clic, care dezvăluie textul afișat",
   "main": "/js/adapt-contrib-accordion.js",
   "keywords": [
     "adapt-plugin",

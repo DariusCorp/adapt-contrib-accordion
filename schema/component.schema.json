@@ -10,7 +10,7 @@
       "properties": {
         "_supportedLayout": {
           "type": "string",
-          "title": "Supported layout",
+          "title": "Aspect acceptat",
           "default": "full-width",
           "enum": [
             "full-width",
@@ -23,16 +23,16 @@
         },
         "instruction": {
           "type": "string",
-          "title": "Instruction",
-          "default": "Select the headings to find out more.",
+          "title": "Instrucțiuni",
+          "default": "Selectați titlurile pentru a afla mai multe.",
           "_adapt": {
             "translatable": true
           }
         },
         "_setCompletionOn": {
           "type": "string",
-          "title": "Completion criteria",
-          "description": "Whether completion is based on the learner having viewed all the accordion items - or just having viewed the component",
+          "title": "Criterii de completare",
+          "description": "Dacă finalizarea se bazează pe faptul că cursantul a vizualizat toate elementele acordeonului - sau doar a vizualizat componenta",
           "default": "allItems",
           "enum": [
             "inview",
@@ -48,7 +48,7 @@
             "properties": {
               "title": {
                 "type": "string",
-                "title": "Title",
+                "title": "Titlu",
                 "default": "",
                 "_adapt": {
                   "translatable": true
@@ -56,8 +56,8 @@
               },
               "body": {
                 "type": "string",
-                "title": "Body",
-                "description": "This is the item body text that is hidden until the item title is clicked on",
+                "title": "Conținut",
+                "description": "Acesta este conținutul elementului care este ascuns până când se face clic pe titlul articolului",
                 "default": "",
                 "_adapt": {
                   "translatable": true
@@ -66,14 +66,14 @@
               },
               "_titleIcon": {
                 "type": "string",
-                "title": "Title icon",
-                "description": "CSS class name to be applied to the accordion title icon.",
+                "title": "Titlul pictogramei",
+                "description": "Numele clasei CSS care urmează să fie aplicat titlului pictogramei acordeonului.",
                 "default": ""
               },
               "_imageAlignment": {
                 "type": "string",
-                "title": "Image alignment",
-                "description": "Defines the alignment of the item image. Full: Image spans the entire width of the container below the text area. Left: Image aligned to the left of the text area. Right: Image aligned to the right of the text area. The default alignment is `full`. For smaller screens the alignment defaults to `full`.",
+                "title": "Alinierea imaginii",
+                "description": "Definește alinierea imaginii elementului. Complet: Imaginea se întinde pe întreaga lățime a containerului de sub zona de text. Stânga: Imaginea aliniată la stânga zonei de text. Dreapta: imagine aliniată la dreapta zonei de text. Alinierea implicită este 'full' Pentru ecranele mai mici, alinierea este implicită la 'full'.",
                 "default": "full",
                 "enum": [
                   "full",
@@ -89,8 +89,8 @@
                 "properties": {
                   "alt": {
                     "type": "string",
-                    "title": "Alternative text",
-                    "description": "A description of the image; required when it has meaning that must be conveyed to the learner. For 'decorative' images, leave this blank",
+                    "title": "Text alternativ",
+                    "description": "O descriere a imaginii; necesar atunci când are un sens care trebuie transmis elevului. Pentru imaginile 'decorative', lăsați acest spațiu necompletat",
                     "default": "",
                     "_adapt": {
                       "translatable": true
@@ -98,8 +98,8 @@
                   },
                   "src": {
                     "type": "string",
-                    "title": "Source",
-                    "description": "Optional image which will be rendered with the item body text",
+                    "title": "Sursă",
+                    "description": "Imagine opțională care va fi redată cu textul corpului elementului",
                     "_backboneForms": {
                       "type": "Asset",
                       "media": "image"
@@ -107,8 +107,8 @@
                   },
                   "attribution": {
                     "type": "string",
-                    "title": "Attribution",
-                    "description": "Text to be displayed as an attribution",
+                    "title": "Atribuire",
+                    "description": "Text care trebuie afișat ca atribuire",
                     "default": "",
                     "_adapt": {
                       "translatable": true
@@ -118,8 +118,8 @@
               },
               "_classes": {
                 "type": "string",
-                "title": "Custom classes",
-                "description": "Custom classes that are applied to the accordion item. Supported classes 'align-image-left' and 'align-image-right' are available to align item image to the left or right in desktop view. On smaller screens the item image defaults underneath the item body text. Additional classes can be used but they must be predefined in one of the Less files. Separate multiple classes with a space",
+                "title": "Clase personalizate",
+                "description": "Clase particularizate care sunt aplicate elementului acordeon. Clasele acceptate 'align-image-left' și 'align-image-right' sunt disponibile pentru a alinia imaginea elementului la stânga sau la dreapta în vizualizarea desktop. Pe ecranele mai mici, imaginea articolului este implicită sub textul corpului elementului. Pot fi utilizate clase suplimentare, dar acestea trebuie să fie predefinite într-unul dintre fișierele Less. Separați mai multe clase cu un spațiu",
                 "default": ""
               }
             }
@@ -127,19 +127,19 @@
         },
         "_shouldCollapseItems": {
           "type": "boolean",
-          "title": "Automatically collapse items",
-          "description": "If disabled, upon expansion of an accordion item, any previously expanded items will not be collapsed",
+          "title": "Restrângerea automată a elementelor",
+          "description": "Dacă este dezactivat, la extinderea unui articol acordeon, orice element extins anterior nu va fi restrâns",
           "default": true
         },
         "_shouldExpandFirstItem": {
           "type": "boolean",
-          "title": "Expand first item by default",
+          "title": "Extindeți primul element în mod implicit",
           "default": false
         },
         "_isCenterAligned": {
           "type": "boolean",
-          "title": "Enable item button vertical layout",
-          "description": "If enabled, the layout of the item button child elements will be stacked on top of one another centrally.",
+          "title": "Activați aspectul vertical al butonului elementului",
+          "description": "Dacă este activat, aspectul elementelor secundare ale butonului de element va fi stivuit unul peste celălalt central.",
           "default": false
         }
       }

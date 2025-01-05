@@ -18,13 +18,13 @@
               "properties": {
                 "_accordion": {
                   "type": "object",
-                  "title": "Accordion",
+                  "title": "Acordeon",
                   "default": {},
                   "properties": {
                     "ariaRegion": {
                       "type": "string",
-                      "title": "ARIA region",
-                      "default": "List of expandable sections. Select each button to expand the content.",
+                      "title": "Zonă ARIA",
+                      "default": "Lista secțiunilor extensibile. Selectați fiecare buton pentru a extinde conținutul.",
                       "_adapt": {
                         "translatable": true
                       }
