@@ -7,7 +7,7 @@
   "component": "accordion",
   "targetAttribute": "_accordion",
   "displayName": "Acordeon",
-  "description": "O componentă acordeon care afișează titluri pe care se poate face clic, care dezvăluie textul afișat",
+  "description": "O componentă acordeon care afișează titluri pe care se poate face clic, după care se afișează textul introdus",
   "main": "/js/adapt-contrib-accordion.js",
   "keywords": [
     "adapt-plugin",
